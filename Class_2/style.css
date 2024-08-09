@@ -1,0 +1,39 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+#button3{
+    width: 15%;
+    height: 30px;
+    margin-left: 2%;                 /*Left ki side se gap ley rhy hain*/
+    color: white;
+    cursor: pointer;                /*hover karne se cursor change ho jaega hand symble mein*/
+    border: 3px solid white;
+    border-radius: 8px;                          /*item ke kono ko gol kar dega*/
+    background-color: rgb(240, 6, 6);         /*rgb => red, blue, green => ye 0 se 255 tak color jaa sakty hain*/
+    box-shadow: 0px 0px 2px 2px rgb(0,0,0);   /*item pe shaddow laga rhy hain up, down se 0, or right, left se 2, 2, px*/   
+}
+
+#button3:hover{
+    width: 20%;
+    height: 45px;
+    font-style: italic;
+    font-size: large;
+    background-color: rgb(158, 8, 8);
+    transition: background-color 1.2s ease;  /*hover karne se background color trasition se change hoga*/
+}
+
+h1{
+    width: 18%;
+    background-color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.it{
+    width: 10%;
+    height: 40px;
+    margin: 1%;
+    display: block;      /*by default horizental buttons ko veritical karne ke liye ye property use karte hain*/
+    background-color: gold;
+}
