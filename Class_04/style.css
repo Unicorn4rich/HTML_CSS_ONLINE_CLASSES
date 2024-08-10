@@ -1,0 +1,54 @@
+/*ye font hamne download kiyya or usko apne code mein use kar rhy hain misaal ke tor pe hmare client ne hamen ye 
+font diyya apni website mein use karne ke liye*/
+
+@font-face{   /*ye keyword hai*/
+    src: url(PlayfairDisplay-Italic.ttf), /*download font ka naam yahn past karenge copy kar ke*/
+    format('truetype');    /*ye browser ki compatibility ke liye hota hai kiyun ke kuch browser ki functionality is font ke format ko sport nahi kar pati isliye */
+
+    font-family: shoaib-font;  /*yahn ham apne font ko naam define karty hain or usi naam se use karte hain font ko*/
+}
+
+
+
+*{
+    margin: 0%;             /*margin 0 karne se browser ka by default margin hata sakty hain*/
+    padding: 0%;            /*margin ki tarhn ham browser ki by default padding bhi hata dety hain*/
+
+    box-sizing: border-box; /*normaly agr ham button ko (height:50px;) (width:100px) dety hain to wo
+     button itni hi height or width leta hai lekin agr ham isko border:4px ka dety hain to ye button height mein 58px ka
+     ho jaega or width mein 108px ka matlab ke hmari di hui height width ko hmara border cross kar lega isi liye ham is
+     cheez se bachne ke liye ye property lgate hain taky hmara button or jo uska border hai wo wo hmari di hui 
+     height width mein aye is se bahar na jaye */
+
+    /* font-family: Arial, Helvetica, sans-serif;  /*(fallback font) ye aik hi font ke 3een names hain or ye isliye likhy hain kiyun ke
+     hmare pass alag alag browser hoty hain jese google chrome, mozila fire-fox, micro-soft edge to kabhi kabhi
+     koi browser hmare diyye huy font ko sport nahi kar pata isliye ham backup ke tor pe baqi names dety hain taky 
+     aik na chaly to dosra font style chal jaye agr dosra na chaly to 3sra chal jaye...*/
+
+    /* font-family: "Grey Qo", cursive;   /*ye font hamne google se uthaya hai link ke zariye usi ko use kar rhy hain*/
+
+    font-family: shoaib-font;
+}
+
+
+
+button{                 /*is button se inspection karna seekha apne web chrome browser ke 3een tabs ko explore kiyya */
+    margin-top: 30px;   /*(Element, Style, Computed,) taky hamen pata hona chahiye hmare bnaye huy item kitni */ 
+    border-width: 4px;  /*(margin, border, padding, or button text, ley rhy hain) */
+    width: 100px;
+    height: 50px;
+    background-color: tomato;
+   /* display: block;  /*iska matlab hota hai pori ki pori jagah gherny wala matlab ye inline buttons ko block elemnt bana dega*/
+} 
+
+#p1{
+    display: inline-block;  /*is property se hmara block element jo pori line gher rha tha wo bas utni jaga lega jitni
+    usko chahiye hogi is wajah se iske neechy ke elemnt bhi iske sath aik hi line mein aajenge*/
+}
+
+
+/* #p2{
+   is p2 ke tag mein hamne koi property nahi di isliye ye by default block element hi rhega inspection kar ke check kar sakty hain...
+} */
+
+

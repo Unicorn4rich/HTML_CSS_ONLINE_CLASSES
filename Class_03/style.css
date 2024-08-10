@@ -1,0 +1,70 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+#btn1, #btn2, #btn3{
+    width: 10%;
+    height: 50px;
+    font-size: 16px;
+    color: white;
+    background-color: tomato;
+
+    margin: 2%;                    /*Ye bahar se 4ro tarf se gap dega button ko */
+    margin-top: 3%;                /*ye sirf opar ki tarf se gap dega button ko*/
+    margin-left: 3%;               /*ye sirf left side se gap dega button ko*/
+    margin-right: 3%;              /*ye sirf right side se gap dega button ko*/
+    margin-bottom: 3%;             /*ye sirf neechy se gap dega button ko*/
+
+    padding: 15px;      /*ye text or button ki outer line mein gap dega 4ro tarf se matlab button ko andar se gap dega*/
+    padding-top: 20px;             /*ye button ke text ko andar ki tarf opar se gap dega outer line se*/
+    padding-left: 20px;            /*ye button ke text ko andar ki tarf left se gap dega outer line se*/
+    padding-right: 20px;           /*ye button ke text ko andar ki tarf right se gap dega outer line se*/
+    padding-bottom: 20px;          /*ye button ke text ko andar ki tarf bottom se gap dega outer line se*/
+
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.7);  /*details in notes*/
+} 
+
+/* ye button Override kar sakta hai opar wali property ko*/
+#btn2{
+    color: red;
+    margin-top: 50px;
+    height: 20px;        /*is property ki height to work karegi lekin is button ka text baqi buttons ke sath align rhega*/
+    vertical-align: top; /*is property se ye apne opar ke margin ko barqrar rakhega or apne text alignment ka by default behavior ko bhi chor dega*/
+    background-color: chartreuse;
+}
+
+/*inko Sudo Element kehty hain*/
+/*hover is se button par jese hi cursor karenge uska background color change ho aega*/
+#btn1:hover{
+    background-color: blue;
+}
+
+
+/*is se button par jese hi click ko hold karenge uska background color change ho aega*/
+#btn2:active{
+    background-color: burlywood;
+}
+
+/*is se button par click karne ke bad uska color change ho jaega or yahi color rhega*/
+#btn3:focus{
+    background-color:black;
+}
+
+
+
+
+
+
+/* Notes
+
+ box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.7); 
+
+   property    right,   bottom,  transperancy matlab blur,      shdow barha bhi sakty hain jitna bara chahen*/ 
+/* box-shadow: 10px      10px           20px                                     0px                  
+
+red, green, blue, alpha      colors inko ham 0 se ley kar 255 tak barha sakty hain but abhi ye black hain
+        rgba                (0,0,0, 
+        
+ye alpha hai matlab transperancy ziyada ya km kar sakt hain ye sirf 0 se 1 tak rehta haiisliye ham isko points mein use karte hain
+0.7); */

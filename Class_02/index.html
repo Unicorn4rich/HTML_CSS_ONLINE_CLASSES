@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<style>
+<style>  /*Internal CSS*/
     .button{
         width: 7%;
         height: 40px;
@@ -25,15 +25,22 @@
 <body bgcolor="wheat">
  <h1>GEN-Z Promise:</h1>   
 <button class="button">Pendding</button> 
-<button style="background-color: rgb(156, 245, 24); width: 5%; height: 30px;;">Resolve</button>   <!--Called inline css-->
+<button style="background-color: rgb(156, 245, 24); width: 5%; height: 30px;;">Resolve</button>   <!--Inline CSS-->
 <button id="button3">Reject</button>
 
-<button class="it">New</button>
-<button class="it">New</button>
-<button class="it">New</button>
-<button class="it">New</button>
-<button class="it">New</button>
+
+<button class="st1 st2 st3">New</button>
+<button class="it chn">New</button>
+<button class="it back">New</button>
+<button id="it it2 it3">New</button>  <!--In 3eno id mein se sirf aik hi id work kar sakti hai 3eeno aik sath nahi-->
+<button class="it" id="button3">New</button>
 
 
 </body>
 </html>
+
+
+<!-- Notes
+
+aik hi tag mein multiple id bana kar unhy use kar sakty hain alag alag css laga kar 
+lekin aik hi tag mein mutiple id laga kar un id ko alag alag acces kar ke css apply nahi kar sakty -->

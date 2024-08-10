@@ -1,3 +1,4 @@
+/*External CSS*/
 *{
     margin: 0%;
     padding: 0%;
@@ -30,10 +31,53 @@ h1{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+
+/*aik hi tag mein multiple classes bana sakty hain*/
+.st1{
+     width: 15%;
+     margin-left: 1%;
+}
+
+.st2{
+      height: 40px;
+}
+
+.st3{
+    background-color:aqua;
+    font-size:large;
+    display: block;
+}
+
+
+/*lekin id mein multiple id nahi bana sakty id sirf aik hi hoti hai lekin usi id ko dosry item par apply kar sakty hain*/
+#it2{
+    width: 100%;
+    height: 97px;
+}
+
+#it3{
+    background-color: black;
+}
+
+/*agr hamen is class mein changes karne hain jo kafi items pe apply hai to ham is class ke tag mein jaa kar or class
+creat karenge phir un classes ko acces kar ke changes kar paenge warna origenal class wali css hi apply rhegi 
+ham isko override nahi kar sakty*/
 .it{
     width: 10%;
     height: 40px;
     margin: 1%;
     display: block;      /*by default horizental buttons ko veritical karne ke liye ye property use karte hain*/
+}
+
+
+/*hamne opar it ki jahn jahn class apply hai wahn ye wali classes laga kar usme kuch or modification kar sakty hain */
+.chn{
+    background-color: blue;
+    width: 49%;
+}
+
+.back{
     background-color: gold;
 }
+
+
