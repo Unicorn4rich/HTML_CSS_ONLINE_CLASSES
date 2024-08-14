@@ -16,7 +16,7 @@
 
            <form>
             
-            <input id="screen" type="text" name="screenD">
+            <input id="screen" type="text" name="screenD">  <!--input mein name dubara isliye likha hai ke ham javscript ke functions apply kar saken-->
 
 
             <div class="buttons_div">
@@ -79,3 +79,54 @@
 
 </body>
 </html>
+
+
+
+
+<!-- NOTES -->
+
+
+<!-- <input id="screen" type="text" name="screenD">  
+
+    input tag se ham use se intract karte hain (id="screen") hamne isliye di taky ham CSS ka kaam kar saken ispe id ko
+    acces kar ke (type="text") isliye di ke isme jo data aega wo text ki foam mein hogaor wesy bhi by-default jo bhi data
+    ata hai input mein wo text hi hota hai bhaly ham type number hi kiyun na rakh len (name="screenD") isliye likha 
+    kiyun ke ham is name ko use kar ke functionality apply karenge-->
+
+
+
+
+   <!-- <input type="button" value="AC" class="btn" onclick="screenD.value = ''">
+
+   is input tag ko use kar ke ham button bana rhy hain taky wo button user se intract ke kaam mein aye
+   iski (type="button") kiyun ke hamen button chahiye, (value="AC") di iska matlab ye ke is button mein (AC) likha hua
+   aega, (class="btn") ye class hamne input pe CSS ka kaam karne ke liye bnai hai, 
+   (onclick="") iska matlab ye hai ke jab ham is button pe click karenge to isk andar jo bhi function likha hoga 
+   wo exicute ho jaega, (screenD.value = '') iska matlab ye hai ke jab onclick pe click kiyya jaega tab screenD name jo
+   input tag ka hai usko acces karo or uski value empty kardo.
+   jab user AC button pe click karega input tag mein jo kuch bhi likha hoga wo hatt jaega... -->
+
+
+
+
+   <!-- <input type="button" value="DEL" class="btn" onclick="screenD.value = screenD.value.slice(0, -1)">
+
+   User jab input ke button (DEL) pe click karega tab onclick method apne andar rakhy huy function ko exicute karega
+   screenD.value = screenD.value.slice(0, -1)  sab se pehly input ke screenD mein jo values assign ki jaegi wo
+   slice() method ke method se aai hui value hogi, or slice() ka method input mein jo user bohut sari values add karega
+   unko (DEL) button click karne se last waly number ko remove kar ke baqi ke numbers show krwa dega or agr ham dubara 
+   click karenge to tab bhi screen ke andar jitni bhi values hongi unke last mein jo number hoga usko remove 
+   karwa diyya aega.... -->
+
+
+
+   <!-- <input type="button" value="/" class="btn" onclick="screenD.value = '/'">
+
+   jab bhi / oprater button pe click hoty hi input screen mein / ka oprater assign kar diyya jaega -->
+
+
+
+<!-- 
+   <input type="button" value="7" class="btn" onclick="screenD.value = '7'">
+
+   jab bhi 7 ke button pe click hoga to input screen mein 7 ki value assign kardi jaegi -->
