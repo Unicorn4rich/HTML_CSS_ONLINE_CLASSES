@@ -1,0 +1,58 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+/* 
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+#image{
+    height: 200px;                /*image ko set karne ke liye hamen height width ki dono property aik sath likhne ki zrorat nahi sirf aik hi property likhenge to dosri wali apne ap apply ho jaegi
+
+}   
+*/
+
+#background{
+    height: 100vh;
+    width: 100%;
+
+   /* background-image: linear-gradient( 90deg,*/  /*ye linear-gradient colors ko opar se neechy block wise apply kar rha hai lekin agr ham isko right to left ya kisi bhi tarhn karna chahty hain to ham isme degree apply kar denge*/
+    /* rgba(68, 138, 95, 0.212), 
+    rgb(250, 32, 232),
+    rgb(37, 223, 31)
+     ), 
+    url(d1.jpg); */  /*ye picture apply ki hai*/
+
+    /* background-size: contain;*/      /*ye property picture ka jitna real size hota hai utni hi picture apply karti hai screen par agr picture choti par jaye screen se to ye dubara us picture ko show krwa deti hai taky jagah khali na bachy */
+    /* background-repeat: no-repeat;*/  /*ye property background pe agr image repat ho rhi hai to ye usko rokti hai */
+
+    background-position: center; /*ye image ko center mein set karti hai agr idhar udhar ho rhi hai to*/
+    background-size: cover;       /*ye image ko cover karti hai screen size mein*/
+
+    /* background: linear-gradient(45deg,#ccc55e, #49e61e, #040f00);*/  /*ham sirf colours bhi apply kar sakty hain */
+
+    background-image: linear-gradient(
+        rgba(0,0,0, 0.5),
+        rgba(0,0,0, 1)
+    ),
+    url(d1.jpg);
+
+}
+
+
+
+
+
+/* Notes */
+
+/* linear-gradient()
+ye aik se ziyada colors ko apas mein mix kar deta hai jitne colors chahen aik sath mix kar sakty hain*/
+
+/* google color picker
+
+hex code is se ham google se bhi colors laa kar laga sakty hain */

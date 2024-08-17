@@ -1,0 +1,89 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{  /*ham screen ko specific kar dety hain ke tumhri height width ye hai is wajah se screen hamen masla nahi karegi agr hmara contant bara ya chota hua to*/
+    height: 100vh;
+    width: 100%;
+
+}
+
+div{
+    height: 200px;
+    width: 200px;
+    background-color: lightcoral;
+    border: 2px solid;
+    display: inline-block;
+    border-right: 2px solid;
+}
+
+/* .firstDiv{
+    display: inline-block;
+}
+
+.secDiv{
+    display: inline-block;
+} */
+
+
+
+
+
+
+/* <----------------------------------------------------END----------------------------------------------------> */
+/* NOTES */
+
+/* display: flex; 
+
+ye block elemnt jo horizental ki pori jagah gher ke bethy hoty hain isliye kisi dosry element ko apni line mein
+nahi any dety to ye un element ko vertical mein jagah gherny ke liye kehta hai jis se baqi ke elemt phir usi aik hi
+line mein aa jate hain. 
+but problem ye hai ke jo block elementt ka margin hota hai wo neechy ki tarf aa jata hai or ab wo apne neechy yani 
+vertical mein kisi dosry element ko nahi any dety jese pehly horizental mein nahi any dey rhy thy to is problem ko 
+solve karne ki aik property hai.
+
+
+display: inline-block;
+
+block elements horizentaly jagah gher ke bethy hoty hain lekin jab ham unhy display flex dety hain to wo phir verticaly
+jagah gher ke beth jate hain to is cheez ko khatam karne ke liye ham (display: inline-block;) ki property use karte hain
+ye elemnts ko bolti hai jitni apki height width hai hai utni jagah capture karo ziyda dimagh khrab mat karo. 
+
+
+Horizentaly =>
+
+justify-content: flex-end;
+ye property item ko horizently screen ke end mein ley jaegi. 
+
+
+justify-content: flex-start; 
+ye property item ko horizently screen ke start mein ley jaegi. 
+
+
+justify-content: center; 
+ye property item ko horizently screen ke center mein ley jaegi. 
+
+
+<----------------------------------------------------END---------------------------------------------------->
+Verticaly =>
+
+align-items: flex-end;   
+ye property item ko verticaly screen ke end yani bottm mein ley jaegi.
+
+
+align-items: flex-start; 
+ye property item ko verticaly screen ke start mein ley jaegi.
+
+
+align-items: center; 
+ye property item ko verticaly screen ke center mein ley jaegi.
+
+
+
+
+
+*/
+
+

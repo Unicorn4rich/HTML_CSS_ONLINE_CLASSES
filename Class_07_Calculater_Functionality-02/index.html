@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="background">
+      
+        <div class="calculater">
+
+         <h3>Calculater</h3>
+
+           <form>
+            
+            <input id="screen" type="text" name="screenD">  <!--input mein name dubara isliye likha hai ke ham javscript ke functions apply kar saken-->
+
+
+            <div class="buttons_div">
+
+              <input type="button" value="AC" class="btn" onclick="screenD.value = ''">
+              <input type="button" value="DEL" class="btn" onclick="screenD.value = screenD.value.slice(0, -1)">
+              <input type="button" value="." class="btn" onclick="screenD.value += '.'">
+              <input type="button" value="/" class="btn" onclick="screenD.value += '/'">
+              
+           </div>
+
+
+            <div class="buttons_div">
+
+              <input type="button" value="7" class="btn" onclick="screenD.value += '7'">
+              <input type="button" value="8" class="btn" onclick="screenD.value += '8'">
+              <input type="button" value="9" class="btn" onclick="screenD.value += '9'">
+              <input type="button" value="*" class="btn" onclick="screenD.value += '*'">
+
+            </div>
+
+
+            <div class="buttons_div">
+
+              <input type="button" value="4" class="btn" onclick="screenD.value += '4'">
+              <input type="button" value="5" class="btn" onclick="screenD.value += '5'">
+              <input type="button" value="6" class="btn" onclick="screenD.value += '6'">
+              <input type="button" value="-" class="btn" onclick="screenD.value += '-'">
+
+            </div>
+
+
+            <div class="buttons_div">
+
+              <input type="button" value="1" class="btn" onclick="screenD.value += '1'">
+              <input type="button" value="2" class="btn" onclick="screenD.value += '2'">
+              <input type="button" value="3" class="btn" onclick="screenD.value += '3'">
+              <input type="button" value="+" class="btn" onclick="screenD.value += '+'">
+
+            </div>
+
+
+            <div class="buttons_div">
+
+              <input type="button" value="000" class="btn" onclick="screenD.value += '000'">
+              <input type="button" value="00" class="btn" onclick="screenD.value += '00'">
+              <input type="button" value="0" class="btn" onclick="screenD.value += '0'">
+              <input type="button" value="=" class="btn" onclick="screenD.value = eval(screenD.value)"> 
+
+            </div>
+
+           </form>
+
+
+        </div>
+
+    </div>
+
+   
+
+</body>
+</html>
+
+
+
+
+<!-- NOTES -->
+
+<!-- <input> ke andar jo bhi cheez ati hai wo string mein hoti hai bhaly wo text ho ya number sab string mein hoty hain -->
+
+
+

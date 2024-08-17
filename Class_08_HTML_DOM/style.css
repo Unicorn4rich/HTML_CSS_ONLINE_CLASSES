@@ -1,0 +1,70 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+#background{
+    height: 100vh;
+    width: 100%;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+     align-items: center;     /* is se hamne calculater ke andar jitna bhi text hai usko or sary elemnts ko center mein kar diyya ye property apne child ke child pe bhi apply ho jati hai */
+}
+
+.calculater{
+    height: auto; /*height auto isliye rakhi hai kiyun ke hamen nahi pata tha ke iske andar ka content kitna space lega isliye hamne auto kar ke content pe ye baat chor di ki jitna space chahiye utni ley lo*/
+    width: auto;      /*same width pe bhi yahi kiyya*/
+    background-color: rgb(125, 131, 131);
+    padding: 12px;
+    text-align: center;  /*ye kya kar rha hai ke apne div ke andar ke buttons ko center mein kar rha hai iska matlab ye apne grand childs par commands chala sakta hai*/
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0, 0.6)  /*is property se ham calculater ke 4ro trf se shadow apply kar rhy hain*/
+}
+
+#screen{
+    height: 56px;
+    width: 300px;
+    font-size: 40px;
+    border-radius: 10px;
+    border: 2px solid hsl(84, 100%, 59%);
+    text-align: right;
+    padding: 2px;
+    
+}
+
+#screen:hover{
+    box-shadow: 0px 0px 10px 0px rgb(140, 221, 11);
+}
+
+.btn{
+    height: 65px;
+    width: 65px;
+    margin: 2px;
+    font-size: 23px;
+    border-radius: 50%;
+    border: 2px solid greenyellow;
+}
+
+.btn:hover{
+    box-shadow: 0px 0px 30px 1px rgb(140, 221, 11);
+    
+}
+
+
+
+.dot{
+  padding-bottom: 15px;  /*ye property isliye seprately hamne is button ko di hai kiyun keiske andar ka dor neechy ki tarf show ho rha tha*/
+}
+
+.str{
+    padding-top: 10px;  /*same ye bhi lekin ye opar ki tarf show ho rha tha*/
+}
+
+.buttons_div{  
+    margin: 5px;       /*buttons waly div ko opar neechy se gap diyya*/
+    display: flex;
+    justify-content: space-between; /*button ke div mein jitni bhi space thi usko equaly sab buttons mein devide kardi*/
+}
+
