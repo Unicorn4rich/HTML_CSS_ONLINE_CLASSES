@@ -1,0 +1,108 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width:  100%;
+    background-color: greenyellow;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    
+    
+}
+
+div{
+    height: 200px;
+    width: 200px;
+    background-color: tomato;
+    text-align: center;
+    border: 2px solid;
+    /* display: inline-block; */
+    font-size: 35px;
+    /* position: absolute; */
+}
+
+#secondDiv{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+p{
+    margin-top: 20px;
+    
+}
+
+
+
+
+
+
+/* Notes
+
+
+text-align: center;
+
+div ke andar moujod text paragraph or iske jese baqi block elements ko bagher display flex ke center mein karne
+ke liye ye peoperty use karte hain or ye children ke children par bhi apply ho jati hai.
+
+
+position: absolute;
+
+is property se div apni position ka qabza chor deta hai screen ke opar se or aik aisi layer mein tabdeel ho jata hai 
+jo kahi bhi move krwai jaa sakti hai or is se screen ke baqi elements ko koi effect nahi parta wo naturaly apni space
+ke hisab se is div ke opar ya neechy aa jate hain. But ispe phir bhi display flex ki propertys apply ho jati hain... 
+
+
+
+display: inline-block; + text-align: center;
+
+agr hamen body mein moujood paragraph or h1 tags or divs waghera ko center mein karna hai jo ke block elements hain or 
+bagher display flex propertys ko use kiyye to uske liye ham sab se pehlt (text-align:center;) ki property denge or agr 
+div waghera phir bhi center mein nahi hoty to unko (display: inline-block;) ki property dey kar center mein kar lenge.
+
+
+
+(3) divs mein se kisi aik div ko center mein karna hai or baqi wahi apni jagah par rhenge.
+
+example 1
+
+  position: absolute;
+  margin-left: 43%;
+  margin-top:3% ;
+
+ jis div ko center mein karna hai sab se pehly (position: absolute;) ye property dey kar us se jagha churwaenge tak ham 
+ manuly div ko center mein kar saken is ham apne andazy se div ko margins dey kar center mein kar sakty hain lekin iska
+ nuqsan ye hai ke hmara div exactly center mein nahi ho paega ham sirf andazy ki bunyad pe...
+
+
+example 2
+
+  position: absolute;
+  left: 50%;
+  top: 50%;              x     y
+  transform: translate(-50%, -50%);
+
+  Exact tariqa ye hai apne div ko center mein karne ka opar neechy se 50/50 percent dey kar uske bad transform 
+  ki property apply kar denge div ko exact center mein lany ke liye  
+ 
+                         x     y
+  transform: translate(-50%, -50%);
+  ye propery apne khud ke div ki (height) (width) ko 100% percent maan kar chalti hai jese hi hamne isko values di
+  (-50%, -50%)  or kaha ke apni 100% width mein se (-50%) percent jitni width peechy move krwa do div ko  or apni 100%
+  height mein se (-50%) height opar ki tarf move krwa do iski first value width ko represent karti hai or second height ko 
+  transform ki property ham isliye use kar rhy hain kiyun ke div apne top se 50% neechy aya hai jab ke uski baqi neechy
+  ki body 50% se bahar chali jati hai or width mein bhi same yahi scene hai...
+
+
+  transform: translatex(-50%) translatey(-50%);
+
+  is property ko ham aisy bhi likh sakty hain or ham in dono propertys ko single eingle bhi use kar sakty hain jese 
+  transform: translatey(-70%); ye ab sirf y accese ke liye lgai hai... 
+
+*/
