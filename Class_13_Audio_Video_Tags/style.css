@@ -1,0 +1,70 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing:border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: azure;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+
+/* .main{
+    height: 200px;
+    width: 100%;
+    background-color: aqua;
+    border: 2px solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.childs{
+    height: 100px;
+    width: 100px;
+    background-color:chartreuse;
+    border: 2px solid;
+} */
+
+
+video{
+    width: 50%;
+}
+
+
+
+/* NOTES 
+
+
+justify-content: space-between;
+
+Aik div hai usmen 3 elements hain or ham chahty hain ke 1st wala element div ki left side se chipak jaye 2nd element div
+ke center mein ho jaye or 3rd wala element div ki right side se chipak jaye iske liye ham (space-between) ki property use karte hain.  
+
+
+justify-content: space-evenly;
+
+ye property div mein jitni space moujood hoti hai wo 3eno elemnts ke darmyan mein brabar brabar devide kar deti hai.
+
+
+justify-content: space-around;
+
+ye property div mein moujod jitni space hoti hai usko elemnts ke 4ro tarf se equaily devide kar deti hai.
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/

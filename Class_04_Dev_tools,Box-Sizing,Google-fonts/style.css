@@ -20,12 +20,12 @@ font diyya apni website mein use karne ke liye*/
      cheez se bachne ke liye ye property lgate hain taky hmara button or jo uska border hai wo wo hmari di hui 
      height width mein aye is se bahar na jaye */
 
-    /* font-family: Arial, Helvetica, sans-serif;  /*(fallback font) ye aik hi font ke 3een names hain or ye isliye likhy hain kiyun ke
+    font-family: Arial, Helvetica, sans-serif;  /*(fallback font) ye aik hi font ke 3een names hain or ye isliye likhy hain kiyun ke
      hmare pass alag alag browser hoty hain jese google chrome, mozila fire-fox, micro-soft edge to kabhi kabhi
      koi browser hmare diyye huy font ko sport nahi kar pata isliye ham backup ke tor pe baqi names dety hain taky 
      aik na chaly to dosra font style chal jaye agr dosra na chaly to 3sra chal jaye...*/
 
-    /* font-family: "Grey Qo", cursive;   /*ye font hamne google se uthaya hai link ke zariye usi ko use kar rhy hain*/
+    font-family: "Grey Qo", cursive;   /*ye font hamne google se uthaya hai link ke zariye usi ko use kar rhy hain*/
 
     font-family: shoaib-font;
 }

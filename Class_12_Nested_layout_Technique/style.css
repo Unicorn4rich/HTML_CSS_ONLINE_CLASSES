@@ -1,0 +1,191 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.596);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+#main{
+    height: 419px;
+    width: 580px;
+    padding: 7px;
+    background-color: white;
+}
+
+.topDiv{
+    height: 50px;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-image: url(logo1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.leftDiv{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+.btn1{
+    height: 50px;
+    width: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 8px;
+    background: none;
+    border: none;
+}
+
+.para1{
+    margin-top: 5px;
+    font-size: 12px;
+    word-spacing: 2px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.content{
+    margin-left: 5px;
+}
+
+
+/* paragrph div work star */
+.para2{
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+
+.reacts{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.btnDiv{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    
+}
+
+.btn2{
+    background: none;
+    border: none;
+    font-size: 15px;
+}
+
+.hr{
+    text-align: center;
+    margin-top: 12px;
+}
+
+.write{
+    margin-top: 20px;
+    width: 100%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo2{
+    height: 40px;
+    width:40px;
+    /* background-color: chartreuse; */
+    border-radius: 50%;
+    background-image: url(logo2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.rightCom{
+    background-color: rgba(90, 162, 207, 0.103);
+    height: 40px;
+    width: 90%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+
+/* User comment work start */
+.userComment{
+    margin-top: 12px;
+    display: flex;
+}
+
+.logo3{
+    height: 40px;
+    width: 40px;
+    /* background-color: brown; */
+    border-radius:50%;
+    background-image: url(logo4.webp);
+    background-position: center;
+    background-size: contain;
+}
+
+.comDiv{
+    background-color: rgba(90, 162, 207, 0.103);
+    padding: 10px;
+    border-radius: 15px;
+    margin-left: 17px;
+}
+
+.userComment{
+    display: flex;
+
+}
+
+.para3{
+    font-size: 12px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.para4{
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* like reply buttons work start */
+.move{
+    position: relative;
+    left: 65px;;
+}
+.btn3{
+    background:none;
+    border: none;
+}
+
+/* last div vew more texts */
+.vew_more{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
