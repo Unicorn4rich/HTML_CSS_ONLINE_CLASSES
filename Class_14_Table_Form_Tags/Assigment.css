@@ -17,6 +17,7 @@ body{
 form{
     height: 400px;
     width: 25%;
+    background-color: aqua;
 }
 
 /* table{
