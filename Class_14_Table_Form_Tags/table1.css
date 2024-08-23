@@ -1,0 +1,36 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/* Explore Table From W3 School Website */
+
+
+table, th, td{              /* jo bhi styling apply karenge wo table, table heading or table data, 3eeno par apply hogi*/
+ /* border-style: solid;
+    border-width: 1px;
+    border-color: black; */
+    border: 2px solid black;    /* Opar ki 3eeno propertys ki styling is aik hi line represent karti hai  */
+}
+
+table{
+    width: 100%;
+ /* border-style: dashed;         /* is property se table ke 4ro tarf aik dash (-) line ka border ban jaega */
+ /* border-style: dotted;         /* is property se table ke 4ro tarf aik dotted (.) line ka border ban jaega */
+    border-style: solid;          /* is property se table ke 4ro tarf aik simple line ka border ban jaega */
+    border-color: red;
+}
+
+th{
+    background-color: blueviolet;
+}
+
+td{
+    background-color: lightcoral;
+    text-align: center;
+    height: 50px;
+ /* height: 40px;     Not Accepted */
+ /* width: 40%;       accepted */
+
+}

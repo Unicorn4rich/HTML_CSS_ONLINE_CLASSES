@@ -1,0 +1,40 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.438);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+form{
+    height: 400px;
+    width: 25%;
+}
+
+/* table{
+    height: 100%;
+    width: 100%;
+} */
+
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+.tr1{
+    height: 50px;
+    width: 100%;
+}
+
+.trow{
+    height: 30px;
+    width: 100%;
+}

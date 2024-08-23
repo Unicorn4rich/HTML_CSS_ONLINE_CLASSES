@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form2.css">
+</head>
+<body>
+    
+    <form action="index.php">
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter yout Name" required autocomplete="off">
+        <br>
+        <br>
+        <label for="pass">Password:</label>
+        <input id="pass" type="password" placeholder="Enter your Password"  required>
+        <br>
+        <br>
+        <label for="email">Email:</label>
+        <input id="email" type="email" placeholder="Write your Email" required>
+        <br>
+        <br>
+        <label for="">Telephone</label>
+        <input type="tel" pattern="[0-9]{4}-[0-9]{4}-[0-9]{3}" required placeholder="Format xxxx-xxxx-xx">
+        <br>
+        <br>
+        <input type="reset">
+        <input type="submit">
+
+
+    </form>
+
+</body>
+</html>
+
+
+<!-- NOTES
+ 
+
+<form action=""></form>
+
+form ke tag se ham form bana kar user se information lety hain isme aik (action="") attribute ata hai iska matlad ye hai
+ke hamne jo user se data liya hai usy jahn bhejna hai wahn ka adress dety hain...
+
+
+<label></label>
+
+is tag mein ham identfy karne ke liye koi text likh sakty hain ke input mein kis type ki information deni hai..
+
+
+<label for="name">Name:</label>
+<input type="text" id="name">
+
+label ke is (for="name") ke attribute mein ham aik id ka name pass karenge or wo id ham input ke tag mein define karenge
+is se hoga ye ke jab bhi ham input ke ilawa (Name:) ki heading pe bhi click karenge to hmara input active ho jaega 
+informathin leny ke liye
+
+
+(placeholder="Enter yout Name")
+
+ye input tag ke andar likha jata hai is se hmare input ke andar user ko kuch text show hoga lekin jese hi user input
+ke andar text fill karne lagega ye blank ho jaega... 
+
+
+(required)
+
+ye attribute input ke tag ke andar lagta hai is se hota ye hai ke jab tak user input box ke andar kuch fill nahi karta
+tab tak ye user ko (please fill out this field) ka msg show krwata rhega.
+
+
+(autocomplete="off")
+
+input ke andar jo suggestions aa rhi hoti hain ye tag un suggestions ko remove kar deta hai 
+or ye input tag ke andar lgaya jata hai.
+
+
+<input type="reset">
+
+ye aik resst button hai jo ke input ke box ke andar jo information fill hui huwi hoti hai 
+usko agr hamne htana hai to hataa sakty hain...
+
+
+<input type="password">
+
+input tag ki type ko password karne se hmara jo input box hoga wo apne andar sirf password type ki information hi lega.
+
+
+<input type="email">
+
+is input tag ke box ke andar sirf email hi fill kar sakty hain agr dosri type ka data fill karenge to ye accept nahi karega.
+
+
+<input type="tel">
+
+is input tag ke andar ham telephone number ka data lety hain
+
+
+(pattern="[0-9]{4}-[0-9]{4}-[0-9]{3}")
+
+telephone tag ke andar ye attribute define karta hai ke [0-9] 0 se ley kar 9 tak koi bhi number aa sakty hain 
+curly braces {4} mein ham ye btaty hain ke 4 numbers any chahiyen is liye dubara ham yahi cheez define karenge [0-9]{4}
+karenge kiyun ke hamen telephone number 11 numbers ka chahiye to first hamne 4 numbers liye phir second time bhi hamne 4
+numbers liye ab total ye 8 number huy baqi ke 3 numbers ke liye dubara se ham yahi pattern repeat karenge [0-9]{3} ab hmare
+11 numbers ka telephone number complete...
+
+
+-->
