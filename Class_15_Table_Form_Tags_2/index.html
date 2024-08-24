@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <form action="index.php" enctype="multipart/form-data">
+
+        <label for="name">Name:</label>
+        <input id="name" type="text" placeholder="Write your Name" autocomplete="off" required>
+        <br>
+        <br>
+        <label for="date">Date Of Birth:</label>
+        <input id="date" type="date" required>
+        <br>
+        <br>
+        <label for="age">Age:</label>
+        <input id="age" type="number" min="18" max="60" required>
+        <br>
+        <br>
+        <label for="male">Male:</label>
+        <input id="male" type="radio" value="m" name="gender" checked>
+        <label for="female">Female:</label>
+        <input id="female" type="radio" value="female" name="gender">
+        <br>
+        <br>
+        <label>Country</label>
+        <select>
+            <option value="pak">Pakistan</option>
+            <option value="ind">India</option>
+            <option value="ira">Iraq</option>
+        </select>
+        <br>
+        <br>
+        <label>Hobbies:</label>
+        <br>
+        <label>Cricket</label>
+        <input type="checkbox" value="Cricket">
+        <label>Football</label>
+        <input type="checkbox" value="Football">
+        <label>Video Games</label>
+        <input type="checkbox" value="Video_Games">
+        <br>
+        <br>
+        <textarea placeholder="Comment" rows="10" cols="40"></textarea>
+        <br>
+        <label>Upload Picture:</label>
+        <input type="file">
+        <br>
+        <br>
+        <input type="reset">
+        <input type="submit">
+    </form>
+
+</body>
+</html>
+
+
+<!-- NOTES 
+ 
+<input type="date">
+
+input ke tag mein type date denge to hamen date month or year ka input box milega.
+
+
+<input type="number" min="18" max="60" required>
+
+input ke tag mein type number likhne se ham koi bhi number type ka data ley sakty hain isme for examle age
+(min="18") is attribute mein ham input ko strict kar rhy hain ke isme age sirf minimum 18 tak accept karni hai is se km nahi
+(max="60") or is attribute mein ham ye defin kar rhy hain ke hamen age maximium ziyada se ziyada 60 tak accept karni hai is se zada nahi.
+
+
+<input type="radio" value="m">
+
+input ke tag mein type radio likhne se hamen aik circle ki shape jesa radio button mil jaega jise ham click karenge to
+uske andar value mein (value="m") jo cheez likhi hogi wahi value aage data base mein submit hogi koi dosri nhi.
+
+
+(name="gender") = (name="gender")
+
+jab ham input mein 2 aik sath radio button bnaty hain to unme aik problem ye ati hai ke aik hi time pe 2no radio button
+tik mark ho rhy hoty hain is se cheez se bachne ke liye ham 2no radio button mein same name ke attribute laga denge
+name="gender" is se hoga ye ke hmare radio button aik group ban jaenge is hoga ye ke user dono mein se kisi aik ko hi
+click kar paega user. jitne radio button unme sab mein utni name ki property dey denge....
+
+
+(checked)
+
+ye atribute jis bhi radio button mein lgaenge wo automaticly select rhega page refrech ya reset button se bhi uska 
+behavior bydefault wahi rhega.... 
+
+
+<select> <option>.....</option> </select>
+
+select ke tag mein ham multiple option ke tags ke use kar ke drop down menu create sakty hain...
+
+
+<option value="pak">Pakistan</option>
+
+is tag mein bhi drop down ke jis option ko select karenge uske andar (value="pak") value ke andar rakhi gai value hi 
+Data base ke andar jaegi....
+
+
+[Countrys list for Drop-down] 
+
+agr hamen koi aisa data likhna hai jo kafi bara hai to ham usy google par search kar sakty hain wahn hamen bana bnaya
+html ya kisi bhi tarhn ka data mil sakta hai.....
+
+
+<input type="checkbox" value="Cricket">
+
+input ke tag mein type ke andar agr ham (checkbox) denge to hamen squire buttons milenge jinko ham aik se ziayda User se 
+multiple choices ka data leny ke liye use karty hain. or isme bhi (value="Cricket") value ke andar likha gaya data
+submit hota hai data base mein....
+
+
+<textarea placeholder="Comment" rows="10" cols="40"></textarea>
+
+<textarea>...</textarea> is tag se hamen aik bara sa box milta hai user se suggestions leny ka  (rows="10") is se ham
+box ki rows barha sakty hain matlab ke [height] jitni brhari ho utni row mein ziayda value denge or (cols="40") is se ham
+colmuns barha sakty hain matlab ke ke box ki [width] waghera...
+
+
+<input type="file">
+
+input ke tag mein ham type file define karny se ham picture, file, CV, ya koi pdf waghera bhi upload kar sakty hain...
+
+
+
+<form enctype="multipart/form-data">
+
+Picture ka jo data hota hai uska size thora bara hota hai isliye usy darect upload nahi kiyya jata iske liye ham aik 
+attribute use karte hain form ke starting tag ke andar (enctype="") ye hmari file ko leta hai or usy encrypt karta hai or
+iske andar value (multipart/form-data) select karte hain ye hmari picture ko apne hisab se choty choty parts mein
+encrypted kar ke upload kar deti hai. 
+encrypt karne ka faisa ye hai ke hmaray data ka size chota ho jata hai or jab ham isy dubara decrypt karte hain to ye
+apne origenal size mein hamen wapas mil jata hai...
+
+-->

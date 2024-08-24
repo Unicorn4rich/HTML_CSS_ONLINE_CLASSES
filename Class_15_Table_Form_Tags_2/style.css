@@ -1,0 +1,16 @@
+
+body{
+    background-color: rgba(0, 0, 0, 0.425);
+    color: white;
+}
+
+#name:focus{
+    background-color: aquamarine;
+    transform: scale(1.5);     /*is property se hmara jo input box hai usko click karne se uska size bara ho jaega
+    or scale ki jitni vaue brhaenge hmara input utna hi bara hoga...*/
+    transition: 1.9s;  /*ye property trasition karegi input ka box jese hi bara hoga [transform: scale(1.5)] karne se*/
+}
+
+#name:hover{
+    background-color: red; /*input box pe cursor rakhny se uskabackground color change ho jaega...*/
+}
