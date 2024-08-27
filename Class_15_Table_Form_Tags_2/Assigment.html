@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Assigment.css">
+</head>
+<body>
+    
+        <table>
+            <form action="btao ga" enctype="multipart/form-data">
+
+            <tr class="row1">
+                <th class="maintext" colspan="2">REGISTRATION FORM</th>
+            </tr>
+
+            <tr>
+                <td><label class="text" for="name">Name:</label></td>
+
+                <td class="td">
+                    <input class="input" id="name" type="text" placeholder="Write your Name" autocomplete="off" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label class="text" for="fatherN">Father Name:</label></td>
+
+                <td class="td">
+                    <input class="input" id="fatherN" type="text" placeholder="Write your Father Name" autocomplete="off" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label class="text" for="email">Email:</label></td>
+
+                <td class="td">
+                    <input class="input" id="email" type="email" placeholder="Enter your Email" autocomplete="off" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label class="text" for="tel">Telephone:</label></td>
+
+                <td class="td">
+                    <input class="input" id="tel" type="tel" pattern="[0-9]{4}-[0-9]{4}-[0-9]{3}" placeholder="Format xxxx-xxxx-xx" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label class="text" for="pass">Password:</label></td>
+
+                <td class="td">
+                    <input class="input" id="pass" type="password" placeholder="Enter your Password" autocomplete="off" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label class="text" for="date">Date of Birth:</label></td>
+
+                <td class="td">
+                    <input class="input" id="date" type="date" placeholder="Enter your Password" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label class="text" for="num">Age:</label></td>
+
+                <td class="td">
+                    <input class="input" id="num" type="number" placeholder="Enter your Age" min="18" max="60" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label class="text">Choice:</label></td>
+
+                <td class="td space"> 
+                    <div><label for="male">Male:</label> 
+                    <input type="radio" id="male" name="gender"></div> 
+                    <div><label for="female">Female:</label>
+                    <input type="radio" id="female" name="gender"></div>
+                </td>
+
+            </tr>
+
+            <tr>
+                <td><label class="text" for="con">Country:</label></td>
+
+                <td class="td">
+                    <select class="input" id="con">
+                        <option value="pak">Pakistan</option>
+                        <option value="ind">India</option>
+                        <option value="chin">China</option>
+                        <option value="jap">Japan</option>
+                        <option value="tur">Turkey</option>
+                    </select>
+                </td>
+
+            </tr>
+
+            <tr>
+                <td><label class="text">Hobbies:</label></td>
+
+                <td class="td center">
+                    <label for="cri">Cricket:</label> 
+                    <input type="checkbox" value="cricket" id="cri">
+                    <label for="foo">Football:</label> 
+                    <input type="checkbox" value="football" id="foo">
+                    <label for="vid">Video Games:</label>
+                    <input type="checkbox" value="video_games" id="vid">
+                </td>
+
+            </tr>
+
+            <tr>
+                <td><label class="text" for="revew">Sugestions:</label></td>
+
+                <td class="td">
+                    <textarea id="revew" class="input" placeholder="Comment" rows="5" cols="20"></textarea>
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td><label class="text" for="up">Upload Picture:</label></td>
+                <td>
+                    <input id="up" class="file" type="file">
+                </td>
+
+            </tr>
+
+            <tr>
+                <td><label class="text">Press:</label></td>
+
+                <td class="td btnEven">
+                    <div><input class="btn" type="button" value="Reset"></div> 
+                    <div><input class="btn" type="submit" value="submit"></div>
+                </td>
+
+            </tr>
+
+
+         </form>
+        </table>
+
+</body>
+</html>
