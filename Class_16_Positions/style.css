@@ -1,0 +1,212 @@
+/* (margin-top: 30px;) or sirf (top: 30px;) in dono ka faraq samjhna hai */
+
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+
+div{
+    min-height: 100px;
+    max-height: 200px;
+    height: 10px;
+    min-width: 200px;
+    max-width: 400px;
+    width: 150px;
+    background-color: lightgreen;
+    border-width: 2px;
+    border-style: solid;
+    border-color: blue; 
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    text-shadow: 5px 5px 10px blue;
+    box-shadow: 0px 0px 15px 0px hsl(40, 2%, 25%);
+}
+
+
+
+
+#myDiv2{
+   visibility: hidden;
+   display: none;
+   opacity: 0.5;
+} 
+*/
+   
+
+/* div ke andar ke extra conetent ke liye bnaya gaya tha isy.  */
+ #div1{
+    overflow: scroll;
+}
+
+
+#newDiv{
+    height: 200px;
+    width: 100%;
+    background-color: lightgreen;
+    font-size: 30px;
+    border: 2px solid;
+    position: fixed; 
+    position: sticky;
+    top: 0;
+}
+
+
+/* NOTES
+
+
+border-width: 2px;
+
+is property se ham border ko kitna choura rakhna hai uska size define kar sakty hain.
+
+
+border-style: solid;
+
+is property se border ki tarhn ka rakhna hai wo define kar sakty hain (solid) simple border, (dashed) - symble jesa border,
+(dotted) ya 4ro tarf dots ka border deta hai.
+
+
+border-color: blue;
+
+is property se ham border ko color dey sakty hain jis tarhn ka dena chahen.
+
+
+border: 2px solid blues;  => (solid) = (dashed) = (dotted)
+
+opar wali 3eno property ko alag alag likhne ke bjaye ham unhy short kar ke aik hi line mein likh sakty hain. 
+
+
+            Right  Bottom   Blur  Color
+text-shadow: 5px    5px     2px   blue;
+
+ye property text par (Right or Bottom) pe (5px) size jitna shadow apply karti hai blue color ka
+or wo shadow (2px) jitna blur hoga or is blur ke pixel ko jitna brhaty jaenge ye utna blur hota jaega... 
+
+
+             Left    Top   Blur  Color
+text-shadow: -5px   -5px   2px   blue;
+
+ye property text par (Left or Top) pe (5px) size jitna shadow apply karti hai blue color ka
+or wo shadow (2px) jitna blur hoga or is blur ke pixel ko jitna brhaty jaenge ye utna blur hota jaega...
+
+
+text-shadow: 0px   0px   2px   blue;
+
+ye property text ke peechy se (Right, Left, Top, Bottom) 4ro tarf se shadow ko show karti hai blue color ka.
+or is blur ke pixel ko jitna brhaty jaenge ye utna blur hota jaega...
+
+
+            Right  Bottom   Blur  spread  Color        oppacity => intencity
+box-shadow: 5px     5px     2px    4px    hsl(12, 100%, 80%);
+
+text shadow ki tarhn same ham divs waghera pe bhi shaodow apply kar sakty hain sari propertys same hain.
+blur ke bad jo 4th property hai spread ki (4px) => matlab phelana iska use karty huy ham shoadow ko or ziyada phelaa
+sakty hain normaly iska itna use nahi kiyya jata.
+
+
+hsl(12, 100%, 80%) => hue, saturation, lightness
+
+ye bhi aik color scheme hai (hue or saturation) se colors ko effect kar sakty hain or iski last value oppacity ke liye
+hoti hai jitna bharnge color utna blur honge. ye sab ham text mein bhi use kar sakty hain. 
+
+
+position: relative;
+
+hmare pass 3 divs hain unmen se hamne kisi aik div ko manuly move krwana hai to ham us div ko ( position: relative;) laga
+kar usy (top, left) se margin dey kar move karwa sakty hain is property ka sab se bara faida ye hai ke ye apni jagah nahi
+chorta yani ke ye (position: absolute;) ki tarhn screen ki opar wali layer pe nahi aega balke ye baqi ke dives ke sath
+relation mein rhega. 
+
+
+ Ground floor        Basement          1st floor         2nd floor          3rd floor
+(z-index: 0;)  =  (z-index: -1;)  =  (z-index: 1;)  =  (z-index: 2;)   =   (z-index: 2;)
+
+ye property screen ki aik layer se 2sri layer par item ko move krwati hai. hmare pass 3een divs hain sab se pehly 1st div
+bana hua hai uske opar 2nd div or uske opar 3rd wala div bana hua hai sabhi aik dosry ke opar bany huy hain.
+ab ham 2nd waly div ko agr first div ke neechy ki layer par ley jana chahty hain to uske liye ye (z-index: -1;) ki property
+use karenge or agr usi div ko 1st or 2nd div ke bhi opar ley jana hai to usliye ye (z-index: 1;) ki property use karenge.
+isko assani sa ham aisy samjh sakty hain ke jis div ko sab neechy ki layer pe ley jana hai usy (-1) ki value denge or
+jis div ko sab se opar ley jana hai usy (1) ki value denge or agr divs ziyada hain to unke hisab se (z-index) ki value 
+barha ya km kar sakty hain unki position ke hisab se jahn jahn jisko rakhna hai... 
+
+
+(overflow: hidden;) 
+
+for example hamne aik div mein pargraph likha uska content div ke bahar nikal rha hai to is property se ham us content ko
+hata sakty hain jo div ke bahar nikal rha tha.
+
+
+(overflow: auto;) => just left side scroll bar  =  (overflow: scroll;)  => right and bottom side scroll bar
+
+is property se ham us content ko div ke andar hi rakh sakty hain jo overflow ho rha tha lekin ye hamen us div ke andar
+scroll bar bana ke dey dega jis se ham us extra content ko scroll kar ke dekh sakty hain.
+
+
+visibility: hidden;
+
+is property se ham apne item ko ghaib kar sakty hain is se wo item hamen show to nahi hoga lekin usne jo jagah gher rakhi
+thi wo wahi pe barqrar rhegi. 
+
+
+display: none;
+
+is property se ham item ko ghaib kar sakty hain or uske sath sath usne jo jagah capture kar rakhi thi
+usko bhi khatam kar dety hain. 
+
+
+opacity: 0.5; => naximun value (1)
+
+ye property hamen transperency ya jise kahen intencity deti hai. ye bilkel (rgba) color scheme ki last wali value ki tarhn
+kaam karti hai (0 se ley kar 1 ke darmyan) use krte hain iski value km karte hain to transperacny ziyada hoti hai or agr 
+iski value ziyada karte hain to visibility ziyada hoti hai. 
+
+
+max-height: 300px;
+
+ye property jis item ko bhi denge uski jo hight hai wo (300) pixel se ziyada bari nahi ho paegi. isko ham choti to kar
+sakty hain lekin bari nahi iski jo limit hai wo 300px tak fix ho chuki hai..   
+
+min-height: 200px;
+
+ye property opar wali property ki opposit hai isko ham jis item ko denge us item ki height (200px) se ziyada to barha sakty
+hain lekin 200px se km nahi kar sakty kiyun ke iski hamne limit set kardi hai ke apko 200 pixel se chota nahi hona.
+
+
+(min-height: 100px;) = (max-height: 200px;)
+
+in dono propertys ko aik hi item mein laga kar hamne ye keh fix kar diyya hai ke is item ki height (100px) se choti nahi ho sakti or
+(200px) se ziyada bari nahi ho sakti. in dono ke beech baqi ki jitna height hai usy ham use kar ke item chota bara kar sakty hain
+    
+
+(min-width: 200px;) = (max-width: 400px;)
+    
+ye bhi same opar wali propertys ki tarhn work karti hain lekin ye width ki propertys hain. isme bhi ham width (200px) se
+choti nahi kar sakty or (400px) se bari nahi kar sakty lekin in dono ke eech jitni height hai usy zaror use kar sakty hain. 
+
+
+position: fixed;
+
+ye property jis item pe bhi denge wo item aik alag layer pe aa ke wahi apni jagah stuck ho jaega chahy ham screen waghera
+ko scroll bhi kar len ye apni jagah nahi chorega wahi fix rhega layer pe. 
+
+
+(position: sticky;) + (top: 0;)
+
+ye dono property aik sath kaam karti hain inko ham jis item pe bhi denge wo item screen ke top pe chipka rhega bhaly scroll
+waghera kar ke neechy ke content pe chaly ye wahi apni jagah pe fix rhega kiyun ke wahi screen ki apni layer pe rehta hai.
+jese kisi website ko neechy ki tarf scroll karty hain or uska jo navigation bar hota hai wo bhi scrolling ke sath sath
+chalta rehta hai ye isko wahi use kar sakty hain. 
+    
+
+
+
+
+
+
+
+*/
