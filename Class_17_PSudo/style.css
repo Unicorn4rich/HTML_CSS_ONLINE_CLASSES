@@ -1,0 +1,294 @@
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(46, 58, 114, 0.3), rgba(19, 44, 158, 0.7)), url(d2.jpg);
+    background-position: center;
+    background-size: cover;
+} 
+
+#myDiv{
+    height: 300px;
+    width: 300px;
+   
+} 
+
+
+div{
+    height: 150px;
+    width: 150px;
+    background-color: lightcoral;
+    border: 2px solid;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+#myId2{
+    background-color: rgb(44, 44, 173);
+}
+
+#myId3{
+    background-color: lightgreen;
+}
+
+
+/* Combinaters */
+
+/* with greater then */
+
+
+body > div > p{
+    color: white;
+}
+
+
+
+/* accesing darect grand children */
+
+body p{
+    color: white;
+} 
+
+
+/* apne siblings divs ke text k color ko white kar dega  */
+
+#myId1 ~ div{
+    color: white;
+}  
+
+/* apne siblings divs ke background color ko brown kar dega */
+
+#myId1 ~ div{
+    background-color: brown;
+}  
+
+
+#myId1 div{
+    border-radius: 50%;
+} 
+
+
+/* Sudo Elemnts Work start */
+
+a:visited{
+    color: pink;
+}
+
+a:link{
+    color: red;
+}
+
+#myInput:hover{
+    background-color: blue;
+} 
+
+
+#myInput:active{
+    background-color: red;
+} 
+
+
+#myInput:focus{
+    background-color: aquamarine;
+}
+
+p:first-child{
+    background-color: aqua;
+} 
+
+p:nth-child(3){
+    background-color: aqua;
+}
+
+
+p:not(.excludes){
+    background-color: aqua;
+    font-size: x-large;
+}
+
+:root{
+    background-color: rgba(0, 0, 0, 0.377);
+    color: white;
+} 
+
+
+li::after{
+    content: " 😁";
+}
+
+li::before{
+    content: "kutta ";
+} 
+
+
+/* is css property`s se hamary li ke andar jitna bhi content tha uske end mein lines create kardi  */
+
+li::after{
+    content: "";
+    height: 2px;
+    width: 10%;
+    background-color: black;
+    position: absolute;
+}
+
+
+/* is tarhn ham specificly sudo class or sudo element ko aik sath bhi use kar sakty hain. isme hamne ye kaha ke sirf
+3sry number pe jo (li) hai uski value ke end mein ye emoji add kardo.
+ wali */
+
+li:nth-child(3)::after{
+    content: "😥";
+}
+
+
+li::selection{
+    color: red;
+    background-color: yellow;
+}
+
+
+
+/* NOTES
+
+
+Combinaters =>7  
+body ke andar 3een divs hain or har aik div ke andar aik paragraph hai.
+
+body > div{}
+
+iska matlab hai body ke andar jo div bana hua hai ham usko acces kar rhy hain.
+
+
+   correct                          wrong
+body > div > p{}       =          body > p{}
+
+ham agr paragraph tag ko acces kar ke uspe kaam karna chahty hain to pehly (body) ko acces karenge uske bad (div) ko phir
+jaa kar (p) ko acces karenge. lekin darect ham grand parent se yani body se acces nahi kar sakty uske grand children ko
+yani ke paragraph ko uske khud ke parent ke hoty huy. 
+
+
+body p{}
+
+lekin ham (>) ko hata kar khali space ka use karenge to ham darect (body) se (p) ko acces kar ke uspe kaam kar sakty hain
+matlab ke ye body ke andar jitne bhi (p) tags honge bhaly wo div ke div ke andar bhi rakhy honge to iska kaam unpe bhi apply hoga.`
+
+#myId1 ~ div {}
+
+aik div ki id se (~) tilde ka sign use karny se us id ka jo (div) hai uske jitne bhi siblings hain matlab baqi ke (divs)
+unko acces kar ke unpe pe kaam kar sakty hain. lekin ye us id (#myId1) pe kaam perform nahi karega uske ilawa baqi sab pe
+karega kiyun ke hamne us se kaha ke is (id) ke jo siblings hain sirf unpe apply karna hai hai khud is id pe nahi.    
+
+
+#myId1 + div{}
+
+ye (+) property (#myId1) ke sath jo pehla parosi hoga ye sirf us pe apni property`s apply karega matlab ke uske sath wala
+mein jo pehla elemnt hoga uspe baqio pe nahi.
+
+
+
+
+Sudo Class work start =>
+
+a:visited{ color: pink;}
+
+is (:visited) sudo class se jab ham kisi link par click karte hain to ye sudo class us link ka color change kar degi iska
+matlab ye hai ke user ko pata lagna chahiye ke usne ye link visit kar liya. or aik dafa visit ki hui website ka color ab 
+pink hi dikhaega bhaly ham us website ko refresh bhi kar len. isy by default hmari browser history se pata chal jata hai
+ke hamne ye website visit ki thi. 
+
+
+a:link{ color: red; }
+
+is (:link) sudo class se bagher visit kiyye huy link ka color red dikhaega or ye hamne isliye likha kiyun ke by default 
+link ka colour blue hota hai lekin ham isme red show krwana chahty hain.
+
+
+#myInput:hover{ background-color: blue; }
+
+is (:hover) ki sudo class se ham jese hi apna curser input ke opar ley jaenge wesy hi input ke background ka color change ho jega.
+
+
+#myInput:active{ background-color: red; }
+
+is (:active) ki sudo class ka matlab hai ke jese hi ham click karenge is input ke background ka color red ho jaega lekin 
+sirf tab tak jab tak click parega warna jese hi click hatega wesy hi ye input normal ho jaega. is sudo ko agr hamen check
+karna hai to ham click kar ke thora hold kar len iska background color red hi rhega... 
+
+
+#myInput:focus{ background-color: aquamarine; } 
+
+is (:focus) sudo class se jese hi input box mein click karenge uska background color change ho jaega or tab tak wo color 
+change rhega jab tak uspe hmara focus rhega matlab ke jab tak ham us input box mein rhenge jese hi kisi or jaga click karenge
+wesy hi us input box ka color normal ho jaega pehly jesa.
+
+
+p:first-child{ background-color: aqua; }
+
+(first-child) ye sudo class karti ye hai ke aik jagah hamne kafi sary (p) tags bana rakhy hain ab ham un sab (p) tags
+mein se sab se pehla wala (p) tag acces kar ke uspe property apply karna chahty hain to aisy acces karenge.
+
+
+p:last-child{ background-color: blue; }
+
+isi tarhn agr un (p) tags mein sab se last waly tag ko acces karna chahty hain to (last-child) ki sudo class likh kar apply
+karenge to last paragrapg accese hoga. ye sudo class use karty huy bas hamen ye imagin karna hai ke ye sary (p) tags aik 
+container mein hain jabhi ham first-child ya last-child keh kar acces kar rhy hain.
+
+
+p:nth-child(2){ background-color: aqua; }
+
+agr ham first ya last child ke ilawa agr kisi beech ke child ko acces karna chahty hain to is nth-child(2) sudo class 
+se kar sakty hain. beech ke jis element ko bhi acces karna ho bas nth-child(3) ke andar us element ki value dey denge.
+
+
+p:not(.excludes){ background-color: aqua; }
+
+is :not(.excludes) sudo class ka matlab hai ke ye (excludes) ki property jis bhi (p) tag ke andar class bana kar denge
+matlab aisy class="excludes" to us paragraph ke ilawa baqi sab paragraph par background ki property apply kar dega or bhi
+jo jo property`s use karenge wo bhi apply kar dega. or ye excludes koi property nahi hai sirf aik name rakha hai iski
+jagah ham koi dosra name bhi dey sakty hain...
+
+
+:root{
+    background-color: rgba(0, 0, 0, 0.377);
+    color: white;
+}
+
+(:root) ki jo sudo class hai isme ham jo kuch bhi apply karenge wo overall pore page pe apply hoga...  
+
+
+
+
+Sudo::Element start => sudo class mein single (:) ata hai or sudo elemnt mein double (::) ata hai.
+
+
+(ul) ke andar 4 (li) hain or har aik li ke andar aik value rakhi hui hai. (li) ko ham aik container manenge or uske 
+andar jo jo option hain wo uske child ban ke (first) (second) (third) (forth) is tarhn aa jaenge.
+
+
+li::after{ content: " 😁"; }
+
+is (::after) ke sudo element se ham content="" ke andar kuch bhi likhenge to wo (li) ke andar har aik value ke end mein us 
+cheez ko add kar dega. for-example aisy => (Apple 😁) = (Green Apple 😁) = (Banana 😁) aisi jitni bhi values hongi un sab pe.
+
+
+li::before{ content: "😍 "; }
+
+isi tarhn uske opposite ka bhi ye (::before) sudo element hai ye content ke starting mein values ko add karega.
+aisy => (😁 Apple) = (😁 Green Apple) = (😁 Banana) in emjois ke ilawa ham kuch bhi values likhenge to wo bhi aisy hi add hongi. 
+
+
+li::selection{ background-color: yellow; }
+
+is (selection) ke sudo element se ham jab bhi screen par (li) ke andar rakhi hui values ko curser se select karenge to 
+selected background yellow color ka show hoga...
+
+
+
+
+
+*/
