@@ -1,0 +1,178 @@
+img{
+    width: 300px;
+    float: right;
+}
+
+.main{
+    display: flex;
+}
+
+#myDiv{
+    height: 200px;
+    width: 200px;
+    background-color: lightcoral;
+    border: 2px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: translatex(50px) translatey(100px);
+}
+
+#myDiv2{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(24, 231, 24);
+    border: 2px solid black;
+}
+
+#myDiv3{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(36, 3, 97);
+    border: 2px solid black;
+    position: relative;
+    right: 80px;
+    top: 50px;
+    bottom: 90px;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Div{
+    height: 200px;
+    width: 200px;
+    background-color: lightcoral;
+    border: 2px solid black;
+    transform: rotateZ(45deg);
+    transition: transform 3s;             /*yahn sirf ham transform pe use kar rhy the transition ko*/ 
+    transition: transform 3s, box-shadow 1s; /*yahn hamne aik sath transform or box-shadow dono pe trasition apply ki hai*/   
+}
+
+.Div:hover{
+    transform: scale(2);
+    transform: scalex(2);
+    transform: scaley(2);
+    transform: rotatex(45deg);
+    transform: rotatey(90deg);
+    transform: rotate(90deg) scale(2);   /*2 property aik sath bhi use kar sakty hain*/
+    box-shadow: 0 0 20px yellow;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* NOTES
+
+
+(float: left;)  =  (float: right;)
+
+agr img ko left side se paragraph ke sath aik hi line mein adjust karna hai to ham imsge ko (float: left) ki property dey 
+denge or agr image ko right side pe rakhna hai or paragraph ko left side pe to (float: right;) ki property denge.
+paragraph block element hai iska matlab ye apni line mein kisi ko nahi any deta isliye ham img ko float krwa rhy hain matlab
+screen ki layer ke opar aa jaegi image or paragraph apni pori jagah lega lekin paragraph ka content img ke neechy nahi aega
+or na opar charhega.
+
+
+position: relative;
+
+is property ke sath agr manuly div ko screen pe move krwana hai to ham krwa sakty hain (left: 30px;) dey kar left se gap 
+dey sakty hain or agr right se gap dena hai to (right: 30px) gap dey sakty hain jitna chahen iske ilawa (top, bottom) se 
+bhi gap dey sakty hain. (position: relative;) ka sab se bara faida ye hai ke ye jahn se move krwaenge wahn ye apni jitni
+height width hogi utni hi jagah barqar rakh ke jaega or isko jahan move karenge uske beech jo space aa rhi hogi uspe iska
+koi control nahi hoga wahn ham koi bhi dosra element define kar sakty hain.     
+
+
+transform: rotateZ(45deg);
+
+is property se ham apne content ko rotate kar sakty hain (45deg) iski value km ya zada bhi kar sakty hain kiyun ke isi ke
+hisab se rotation hogi.
+
+
+   Normal size              Double size                Half size         only width increase     only height increase
+transform: scale(1); = transform: scale(2); = transform: scale(0.5); =>  transform: scalex(2); = transform: scaley(2);
+
+scale() ki property se ham apne content ka size bara ya chota kar sakty hain khud usi content size ke hisab se 
+for example aik div hai uspe ham ye property apply kar rhy hain scale(1) ye normal size hai hmare div ka/ scale(2) ye double
+size kar dega jitna hmare div ka size hoga height or width mein dono ka barha dega. isi tarhn scale(0.5) ye hmare div ke
+origenal size ka Aadha size kar dega. matlab ye ke main point ye (1) number hai isko ham 100% manenge or iski value ziyada bhraenge to hmara div
+bara hoga or agr km karenge to div chota hoga.
+
+
+transform: rotatex(90deg);
+
+(rotatex) is property se hmara div width mein apna size barqrar rakhty huy opar or neechy se palat jaega. bilkul aisy jese
+kisi stand par khari plait ko pakar kar ham zameen par seedha rakh dety hain bilkul wesy hi. or (90deg) ye size ham kam ya 
+ziyada kar sakty hain apne hisab se.
+
+
+transform: rotatey(90deg);
+
+(rotatey) is property se bhi ham bilkul wesy hi div ko palat sakty hain. lekin ye aisy hai ke jese kisi plait ko hamne left 
+right se flip kar diyya ho jis se left or right side ka size khatam ho jaega bass plait ka opar or neechy ka size show 
+hoga bareek side wala... 
+
+
+
+transform: scale(2);
+transition: transform 2s;
+
+(transition) ko ham time delay ke liye use karte hain or is code mein hamne kaha ke ye jo hmara div hai uska size double 
+kar do transform: scale(2) ki property use kar ke lekin masla ye hai ke hover karne se ye div achnak se apna size double
+kar deta hai is cheez ko counter karne ke liye hamne (transition: transform 2s;) ki property use ki usme hamne btaya ke 
+(transform) ke opar ye transition lgani hai ke jab bhi div ka size bara ho tab 2 second ka time delay ley size increase karne mein. 
+
+transform: scale(2);   ko ham hover ki sudo class mein rakhenge or
+transition: transform 2s; ko ham usi div mein rakhenge jispe trasition apply kar rhy hain iska sab se bara faida ye hai ke
+jab bhi ham hover karenge to 2 second ka time delay to lega hi lekin jese hi ham hover htaenge to wo div achanak se chota
+nahi hoga balke chota hoty huy bhi 2 second ka time delay lega....
+
+
+
+Div => 
+transition: transform 3s, box-shadow 1s;
+
+Div:hover => 
+transform: rotate(90deg) scale(2);   
+box-shadow: 0 0 20px yellow;
+
+div par hover karne se jo (transform) ki property mein (90deg) jitna rotation hogi or scale(2) se div ka size double hoga
+or sath (box-shadow) apply hoga. in dono ko transition ki help se time delay dey sakty hain aik sath (transform 3s) ki jo
+bhi property`s hongi wo 3 second ka delay lengi or (box-shadow 1s) aik second ke delay ke bad apply hoga.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
