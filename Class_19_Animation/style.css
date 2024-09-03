@@ -1,0 +1,204 @@
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#child{
+    height: 20px;
+    width: 10%;
+    background-color: red;
+}
+
+#inerDiv{
+    height: 50px;
+    width: 100%;
+    background-color: yellow;
+}
+
+#myDiv{
+    height: 200px;
+    width: 200px;
+    background-color: blueviolet;
+    border: 2px solid;
+
+    /* transform: translate(20px, 180px); */
+    /* transform: translatex(-570px) translatey(190px); */
+
+    transition: transform 5s;   
+}
+
+#myDiv:hover{
+    /* transform: scale(1); */
+    /* transform: scaleX(2); */
+    /* transform: scaleY(1.5); */
+
+     /* transform: rotatez(45deg); */
+    /* transform: rotateX(360deg); */
+    /* transform: rotateY(360deg); */
+
+    /* transform: rotatez(360deg) scale(2); */
+    /* transform: rotateZ(360deg) rotateX(360deg); */
+
+    transform: rotateZ(360deg);
+    transform-origin: 100% 100%;
+
+}
+
+/* yahn tak hamne div pin point ki rotation wala kaam kiyya  */
+
+#chngeDiv{
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    border: 2px solid;
+
+    animation-name: Changing_color;   
+    animation-duration: 3s;          
+    animation-iteration-count: infinite;    
+    animation-direction: alternate;  
+    animation-play-state: running;
+}
+
+
+/* @keyframes Changing_color {
+    from {background-color: yellow;}  Starting state 
+    to {background-color: blue;}      Ending state 
+} */
+
+
+/* @keyframes Changing_color {
+    from{}
+    to{transform: rotateZ(360deg);}
+} */
+
+
+@keyframes Changing_color {
+    from{ transform: scale(0);}
+    to{transform: scale(2);}
+}
+
+
+
+
+
+
+
+/* NOTES 
+
+
+transform => 3 main property`s
+
+1. transform: translate(0px, 0px) => for moving
+2. transform: scale(1)            => for increse & decrease height width
+3. transform: rotateZ(45deg)      => for rotattion
+
+
+
+transform: translate(20px, 180px);
+
+                  x  y
+transform-origin: 0  0;
+
+first value (0) x access => width ko represent karti hai or dosri value (0) y acces => height ko represent karti hai.
+in dono values ko aik sath likh kar hamary div ki jo (top or left) ka jo kona hai matlab div ka starting point wala kona
+ham usko fix kar dety hain iska faida ye hai ke hover rotate karne se div ki pori body ghomegi lekin div ka starting kona
+nahi ghomega wahi apni jagah fix rahega jese ke hamne wahn keel thok di ho.
+
+                   x
+transform-origin: 100% 0;
+
+is property mein first value (0) yani x acces ki width ko (100%) likhne se hmare div ka jo pin point hai wo top right ke 
+kony pe fix ho jaega jis pe rotation apply karne se pori body ghomegi lekin wo right side ka top kona nahi ghomega wahi
+fix rhega.  
+
+                   x
+transform-origin: 50% 0;
+
+first value X acces ko (50%) karne se hmare div ka jo pin point hai wo div ke top pe right or left kony ke darmyan mein 
+fix ho jaega.
+
+                     y
+transform-origin: 0 50%;
+
+first value X acces ko (0) karne se hamne apne div ke pin point ko width se wapas starting point pe bulaa liya or second
+value Y acces ko (50%) karnse se pin point ko div ke (top or bottom) se center mein fix kar diyya hai jis se rotation 
+karne se hmara pora div ghomega lekin wo point nahi ghomega. 
+
+                   x   y
+transform-origin: 50% 50%;
+
+X acces or Y acces ko 50/50 percent deny se hmare div ka jo pin point hai wo div ke horizently or verticaly center mein
+fix ho jaega or ispe roattion karne se hmare div ke center ke ilawa pora div move karega. 
+
+                   x    y
+transform-origin: 100% 100%;
+
+X acces ko (100%) deny se div ka pin point top se right ke kony pe chala gaya or Y acces ko (100%) deny se wo pin point 
+opar se move ho ke darect div ke bottom ke right kony pe jaa kar fix ho gaya jis se us point ke ilawa baqi pora div 
+rotate karega. 
+
+
+
+@keyframes Changing_color { from{} to{} }
+
+Changing_color ke naam se hamne aik key frame define kiyya. (from{}) iska matlab hai jo bhi state hamne chlani hai wo yahn
+se shuro hogi or (to{}) iska matlab hai ke wo state yahn par aa kar khatam hogi.
+
+
+animation-name: Changing_color;
+
+isme ham keyframe ka naam pass kar ke animation ko batenge ke is naam se animation hai hmara.
+
+
+animation-duration: 5s;         
+
+animation jitne second tak chlana hai wo yahn btaenge. 
+
+
+animation-iteration-count: 2;  
+
+animation kitne dafa chalana hai wo yahn btaenge 1 dafa 2 dafa ya phir zada or agr ham isy unlimited dafa chlana chah rhy 
+hain to iske andar (infinite) likh denge. 
+
+
+animation-direction: reverse;    
+
+pehly yellow color se blue color tak jaa rhy thy ham lekin ab ye reverse kar diyya hamne ab blue color se shuro ho kar 
+yellow color tak jaega.
+
+
+animation-direction: alternate;  
+
+is animation mein hamn yellow color ko blue color tak chala rhy hain or phir wapas blue color se yellow color tak reverse
+karwa kar chala rhy hain. or agr reverse nahi krwana to uski jagah (normal likh denge). 
+
+
+animation-play-state: paused;
+
+agr animation bar bar chaly jaa rha hai to ham is property se usy stop kar sakty hain. or jab dubara chlana chahen to 
+paused ki jagah running likh denge.
+
+
+from{}
+starting halat jesi hai orignal wesi hi honi chahiye div ki isliye isko empty chor diyya.
+
+to{ transform: rotateZ(360deg); }
+or jab ending halat ho to hmara div rotate kar rha ho.
+
+
+from{ transform: scale(0);}
+starting jab ho to hmaray div ka size itna chota ho ke wo nazar hi na aye matlab (0) pe.
+
+to{transform: scale(2);}
+or iski ending jab ho to iska size increse ho kar double ho jaye apne origenal size se bhi.
+
+
+
+
+
+
+
+*/
