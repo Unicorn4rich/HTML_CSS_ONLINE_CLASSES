@@ -24,23 +24,23 @@ body{
     background-color: blueviolet;
     border: 2px solid;
 
-    /* transform: translate(20px, 180px); */
-    /* transform: translatex(-570px) translatey(190px); */
+    transform: translate(20px, 180px);
+    transform: translatex(-570px) translatey(190px);
 
     transition: transform 5s;   
 }
 
 #myDiv:hover{
-    /* transform: scale(1); */
-    /* transform: scaleX(2); */
-    /* transform: scaleY(1.5); */
+    transform: scale(1);
+    transform: scaleX(2);
+    transform: scaleY(1.5);
 
-     /* transform: rotatez(45deg); */
-    /* transform: rotateX(360deg); */
-    /* transform: rotateY(360deg); */
+    transform: rotatez(45deg);
+    transform: rotateX(360deg);
+    transform: rotateY(360deg);
 
-    /* transform: rotatez(360deg) scale(2); */
-    /* transform: rotateZ(360deg) rotateX(360deg); */
+    transform: rotatez(360deg) scale(2);
+    transform: rotateZ(360deg) rotateX(360deg);
 
     transform: rotateZ(360deg);
     transform-origin: 100% 100%;
@@ -56,23 +56,23 @@ body{
     border: 2px solid;
 
     animation-name: Changing_color;   
-    animation-duration: 3s;          
-    animation-iteration-count: infinite;    
-    animation-direction: alternate;  
-    animation-play-state: running;
+    animation-duration: 10s;          
+    animation-iteration-count: 1;    
+    animation-direction: normal;  
+    animation-play-state: normal;
 }
 
 
-/* @keyframes Changing_color {
-    from {background-color: yellow;}  Starting state 
-    to {background-color: blue;}      Ending state 
-} */
+@keyframes Changing_color {
+    from {background-color: yellow;} /* Starting state */ 
+    to {background-color: blue;}     /* Ending state */
+}
 
 
-/* @keyframes Changing_color {
+@keyframes Changing_color {
     from{}
     to{transform: rotateZ(360deg);}
-} */
+}
 
 
 @keyframes Changing_color {
@@ -80,6 +80,14 @@ body{
     to{transform: scale(2);}
 }
 
+/* Ham apne code ko tukron mein bhi tor sakty hain jses yahn hamne 3 second ko 4 tukron mein tora hai... */
+@keyframes Changing_color {
+    0% {background-color: aqua;}     /* => 0% se aqua color start hoga or 25% tak red color pe end hoga */
+    25% {background-color: red;}     /* => 25% se red colot start hoga or 50% tak yellow color pe end hoga */
+    50% {background-color: yellow;}  /* => 50% se yellow color start hoga or 75% tak green color pe end hoga */
+    75% {background-color: green;}   /* => 75% se green color start hoga or 100% tak blue color pe end hoga */
+    100% {background-color: blue;}  
+}
 
 
 
