@@ -1,0 +1,140 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing:border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+/* 
+
+#myDiv{
+    padding: 20px;
+    background-color: aquamarine;
+    border: 2px solid black;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    height: 40px;
+    width: 40px;
+}
+
+#firstDiv{
+    background-color: lightcoral;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; 
+}
+
+#secondDiv{
+    background-color: chartreuse;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+
+/* yahn se ham grid ki css start kar rhy hain */
+
+#myDiv{
+    padding: 20px;
+    background-color: aquamarine;
+    border: 2px solid;
+    display: grid;
+/*  grid-template-columns: auto auto auto auto; */  /* first example */
+/*  grid-template-columns: 60px 50px 20px; */       /* second example */
+
+/*  grid-template-rows: auto auto auto auto; */     /* is property ne work to kiyya lekin show nahi hua vertical mein*/
+
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+ /* gap: 8px; */
+    column-gap: 6px;
+    row-gap: 10px;
+}
+
+
+button{
+    height: 40px;
+    width: 40px;
+}
+
+
+
+
+/*
+
+NOTES
+
+flex-direction: column;
+
+is property se horizental cheezo ko vertical kar sakty hain matlab ke colmun ki shakal mein lekin ye (display: flex;) property ke sath work karegi.
+
+
+flex-direction: row;
+
+is property se vertical cheezo ko horizental mein kar sakty hain matlab ke row ki shakal mein or ye property (display: flex;) ke sath work karegi.
+
+
+display: grid;
+
+is property se ham 2 directions aik sath control kar sakty hain or ye property by-default colmun mein kaam karti hai
+
+
+grid-template-columns: auto auto auto auto;
+
+ye property grid se jo sari cheezen by-default 1 hi colmun mein hui thi us aik colmun ko tor kar multiple colmun bnati hai
+jitne colmun hamen chahiye hoty hain utni dafa ham (auto) likh dety hain or ye auto ki property 100% jagah gher leti hai jese is property mein
+4 dafa auto ko likha to hamen 4 colmun bany huy mil gaye jin ke andar ke item bhi equaly devide  huy huwy hain or agr  ham chahen to 
+(auto) ki jagah (px) ka bhi use kar sakty hain size waghera apne hisab se rakhny ke liye.
+
+
+grid-template-columns: auto auto auto auto;
+grid-template-rows: auto 50px auto auto;
+
+in do property`s ko combine kar ke likhenge to hamen same aisa lagega ke (grid-colmun) likh lety sirf (grid-rows) likhny ki zrorat hi nahi thi
+lekin in dono ko aik sath likhne ka faida ye hai ke ham jis bhi row ki neechy ki tarf gap dena chahty hain to us row ke index mein pixel ka 
+use karenge jese (50px) to hamen gap mil jaega pori row ka. 
+
+
+gap: 8px;
+
+is property se ham apne items ke beech gap dey sakty hain jese hamne is main div mein moujod buttons ko gap diyya button ke 4ro tarf se 
+equaly normly ham button ke beech gap deny ke liye (margin: 8px;) ki property ka use karty the.
+
+
+column-gap: 6px;
+
+is property se ham sirf columns ke beech gap dey sakty hain.
+
+
+row-gap: 10px;
+
+is property ham sirf rows ke beech gap dey sakty hain.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
